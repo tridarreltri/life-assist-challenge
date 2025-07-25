@@ -119,12 +119,12 @@ function addAdditionalBoxes() {
     const container = document.querySelector('.grid-boxes');
     const boxSiete = document.createElement('div');
     boxSiete.textContent = 'NUMERO SIETE';
-    boxSiete.className = 'grid-box col-6 col-md-6 light-box';
+    boxSiete.classList.add('grid-box', 'col-6', 'col-md-6', 'light-box');
     boxSiete.setAttribute('small-index', '7');
     boxSiete.setAttribute('large-index', '7');
     const boxOcho = document.createElement('div');
     boxOcho.textContent = 'NUMERO OCHO';
-    boxOcho.className = 'grid-box col-6 col-md-6 dark-box';
+    boxOcho.classList.add('grid-box', 'col-6', 'col-md-6', 'dark-box');
     boxOcho.setAttribute('small-index', '8');
     boxOcho.setAttribute('large-index', '8');
     container.appendChild(boxSiete);
@@ -140,7 +140,7 @@ function reorderBoxesForLargeScreens() {
 
     if (window.innerWidth >= 768) {
         if (boxes.length > 6) {
-            // If there are less than 6 boxes, add the missing ones
+            // If there are more than 6 boxes, remove the additional boxes
             boxes.splice(6, 2);
         }
         // Sort in descending order using data-index
