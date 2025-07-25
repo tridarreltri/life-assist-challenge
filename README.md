@@ -43,7 +43,7 @@
     <a href="https://github.com/tridarreltri/life-assist-challenge"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://dev.dlulrich.com">View Demo</a>
+    <a href="https://dlulrich.com">View Demo</a>
     &middot;
     <a href="https://github.com/tridarreltri/life-assist-challenge/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
